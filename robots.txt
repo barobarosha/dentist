@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Замените домен после переноса на свой / настройки GitHub Pages
+Sitemap: https://username.github.io/repo-name/sitemap.xml

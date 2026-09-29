@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO: title/description переключаются из js/i18n.js при смене языка.
+     При переносе на свой домен замените BASE_URL в js/config.js — canonical/hreflang соберутся автоматически. ===== -->
+<title>ირაკლი გასვიანი — სტომატოლოგი-ორთოპედი თბილისში | Dentagram Clinic</title>
+<meta name="description" content="ირაკლი გასვიანი — სტომატოლოგი-ორთოპედი თბილისში (Dentagram Clinic). კორონკები, ვინირები, იმპლანტებზე პროტეზირება. ბუნებრივი შედეგი და გასაგები სამკურნალო გეგმა.">
+<link rel="canonical" id="canonical" href="./">
+<link rel="alternate" hreflang="ru" href="./?lang=ru">
+<link rel="alternate" hreflang="en" href="./?lang=en">
+<link rel="alternate" hreflang="ka" href="./?lang=ka">
+<link rel="alternate" hreflang="x-default" href="./">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dr. Irakli Gasviani">
+<meta property="og:title" id="og-title" content="ირაკლი გასვიანი — სტომატოლოგი-ორთოპედი თბილისში">
+<meta property="og:description" id="og-desc" content="ბუნებრივი და ფუნქციონალური ღიმილის აღდგენა. Dentagram Clinic, თბილისი.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<!-- Schema.org: Dentist -->
+<script type="application/ld+json" id="schema-org">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Irakli Gasviani",
+  "jobTitle": "Dental Prosthodontist",
+  "image": "assets/img/hero.jpg",
+  "url": "./",
+  "worksFor": { "@type": "MedicalClinic", "name": "Dentagram Clinic" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "18 Adam Mitskevichi St.",
+    "addressLocality": "Tbilisi",
+    "addressCountry": "GE"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 41.7151, "longitude": 44.8271 },
+  "medicalSpecialty": "Prosthodontics",
+  "availableLanguage": ["ru", "en", "ka"],
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&family=Noto+Serif+Georgian:wght@300;400;500&family=FiraGO:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Dr. Irakli Gasviani">
+      <span class="brand-mark">IG</span>
+      <span class="brand-text" data-i18n="brand">Ираклий Гасвиани</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Navigation">
+      <a href="#about" data-i18n="nav.about">О враче</a>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#cases" data-i18n="nav.cases">Работы</a>
+      <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+      <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    </nav>
+    <div class="header-right">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="ru" class="lang-btn active">RU</button>
+        <button type="button" data-lang="en" class="lang-btn">EN</button>
+        <button type="button" data-lang="ka" class="lang-btn">KA</button>
+      </div>
+      <a href="#contact" class="btn btn-solid btn-sm header-cta" data-i18n="nav.book">Записаться</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#about" data-i18n="nav.about">О враче</a>
+  <a href="#services" data-i18n="nav.services">Услуги</a>
+  <a href="#cases" data-i18n="nav.cases">Работы</a>
+  <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+  <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+  <a href="#contact" data-i18n="nav.contact">Контакты</a>
+</nav>
+
+<main id="top">
+
+  <!-- ===================== 1. HERO ===================== -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Стоматолог-ортопед · Тбилиси</p>
+      <h1 class="hero-title"><span data-i18n="hero.name">Ираклий</span> <em data-i18n="hero.surname">Гасвиани</em></h1>
+      <p class="hero-slogan" data-i18n="hero.slogan">Естественное и функциональное восстановление улыбки</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid" data-i18n="hero.cta1">Записаться</a>
+        <a href="#cases" class="btn btn-outline" data-i18n="hero.cta2">Посмотреть работы</a>
+      </div>
+      <p class="hero-loc" data-i18n="hero.loc">Tbilisi · Dentagram Clinic · ул. Адама Мицкевича, 18</p>
+    </div>
+    <figure class="hero-photo">
+      <div class="hero-photo-frame">
+        <img src="assets/img/hero.jpg" alt="Ираклий Гасвиани — стоматолог-ортопед, Dentagram Clinic" width="1206" height="1491" fetchpriority="high">
+      </div>
+      <div class="hero-arch" aria-hidden="true"></div>
+      <figcaption class="hero-badge" data-i18n="hero.badge">Dentagram Clinic</figcaption>
+    </figure>
+  </section>
+
+  <!-- Бегущая строка -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- ===================== 2. О ВРАЧЕ ===================== -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="about.eyebrow">О враче</p>
+      <h2 data-i18n="about.title">Подход, который виден в результате</h2>
+    </div>
+    <div class="about-grid">
+      <figure class="about-photo">
+        <img src="assets/img/about.jpg" alt="Ираклий Гасвиани в клинике Dentagram" width="588" height="426" loading="lazy">
+      </figure>
+      <div class="about-body">
+        <p class="lead" data-i18n="about.p1">Меня зовут Ираклий Гасвиани, я стоматолог-ортопед. Моя задача — не просто «поставить коронку», а вернуть зубам функцию и естественную эстетику, чтобы результат выглядел как ваши собственные зубы, а не как работа врача.</p>
+        <p data-i18n="about.p2">Я работаю по принципу индивидуального плана: перед лечением провожу полную диагностику, объясняю все варианты простым языком и вместе с вами выбираем решение — по показаниям, срокам и бюджету. Никаких навязанных услуг: вы понимаете каждый шаг до того, как он начнётся.</p>
+        <dl class="about-facts">
+          <div><dt data-i18n="about.fact1k">Образование</dt><dd data-i18n="about.fact1v">[вуз, год, специальность]</dd></div>
+          <div><dt data-i18n="about.fact2k">Стаж</dt><dd data-i18n="about.fact2v">[N] лет · ортопедическая стоматология, эстетическая реабилитация</dd></div>
+          <div><dt data-i18n="about.fact3k">Дополнительно</dt><dd data-i18n="about.fact3v">[сертификаты, курсы]</dd></div>
+        </dl>
+        <div class="about-gallery">
+          <img src="assets/img/work-1.jpg" alt="Работа под микроскопом" width="294" height="363" loading="lazy">
+          <img src="assets/img/work-2.jpg" alt="Разбор снимка с пациентом" width="294" height="363" loading="lazy">
+          <img src="assets/img/work-3.jpg" alt="Планирование лечения" width="294" height="363" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. УСЛУГИ ===================== -->
+  <section class="section section-alt" id="services">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="services.eyebrow">Услуги</p>
+      <h2 data-i18n="services.title">Чем я могу помочь</h2>
+    </div>
+    <div class="services-list" id="servicesList"><!-- рендерится из js/i18n.js --></div>
+  </section>
+
+  <!-- ===================== 4. ЭТАПЫ ===================== -->
+  <section class="section" id="steps">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="steps.eyebrow">Как проходит лечение</p>
+      <h2 data-i18n="steps.title">Пять понятных шагов</h2>
+    </div>
+    <ol class="steps-list" id="stepsList"><!-- рендерится из js/i18n.js --></ol>
+  </section>
+
+  <!-- ===================== 5. КЕЙСЫ ДО/ПОСЛЕ ===================== -->
+  <section class="section section-alt" id="cases">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="cases.eyebrow">Работы</p>
+      <h2 data-i18n="cases.title">До и после</h2>
+      <p class="section-sub" data-i18n="cases.sub">Потяните ползунок, чтобы сравнить результат</p>
+    </div>
+    <div class="cases-grid" id="casesGrid"><!-- рендерится из js/i18n.js, фото — js/config.js --></div>
+  </section>
+
+  <!-- ===================== 6. ПРЕИМУЩЕСТВА ===================== -->
+  <section class="section" id="advantages">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="adv.eyebrow">Почему ко мне</p>
+      <h2 data-i18n="adv.title">Шесть причин</h2>
+    </div>
+    <div class="adv-acc" id="advGrid"><!-- рендерится из js/i18n.js --></div>
+  </section>
+
+  <!-- ===================== 7. ОТЗЫВЫ ===================== -->
+  <section class="section section-alt" id="reviews">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="reviews.eyebrow">Отзывы</p>
+      <h2 data-i18n="reviews.title">Что говорят пациенты</h2>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid"><!-- тестовые отзывы из js/i18n.js — заменить на реальные --></div>
+  </section>
+
+  <!-- ===================== 8. FAQ ===================== -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="faq.eyebrow">Вопросы</p>
+      <h2 data-i18n="faq.title">Частые вопросы</h2>
+    </div>
+    <div class="faq-list" id="faqList"><!-- рендерится из js/i18n.js --></div>
+  </section>
+
+  <!-- ===================== 9. КОНТАКТЫ / ЗАПИСЬ ===================== -->
+  <section class="section section-dark" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Контакты</p>
+        <h2 data-i18n="contact.title">Записаться на консультацию</h2>
+        <p data-i18n="contact.sub">Оставьте заявку — отвечу лично в WhatsApp в течение [часов].</p>
+        <ul class="contact-links">
+          <li><a id="whatsappLink" href="#" target="_blank" rel="noopener" data-track="whatsapp_click"><span data-i18n="contact.whatsapp">WhatsApp</span><span class="contact-value" id="whatsappValue"></span></a></li>
+          <li><a id="phoneLink" href="#" data-track="phone_click"><span data-i18n="contact.phone">Телефон</span><span class="contact-value" id="phoneValue"></span></a></li>
+          <li><a id="instagramLink" href="#" target="_blank" rel="noopener" data-track="instagram_click"><span>Instagram</span><span class="contact-value" id="instagramValue"></span></a></li>
+          <li><a id="mapLink" href="#" target="_blank" rel="noopener" data-track="map_click"><span data-i18n="contact.address">Адрес</span><span class="contact-value" data-i18n="contact.addressValue">Dentagram Clinic, ул. Адама Мицкевича, 18, Тбилиси</span></a></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="bookingForm" novalidate>
+        <div class="form-row">
+          <label for="f-name" data-i18n="form.name">Ваше имя</label>
+          <input type="text" id="f-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="f-contact" data-i18n="form.contact">Телефон или ник в мессенджере</label>
+          <input type="text" id="f-contact" name="contact" required autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="f-lang" data-i18n="form.lang">Язык общения</label>
+          <select id="f-lang" name="language">
+            <option value="RU">Русский</option>
+            <option value="EN">English</option>
+            <option value="KA">ქართული</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="f-msg" data-i18n="form.msg">Опишите кратко ваш запрос (необязательно)</label>
+          <textarea id="f-msg" name="message" rows="4"></textarea>
+        </div>
+        <!-- Капча: вставьте ключ сайта в js/config.js (RECAPTCHA_SITE_KEY) -->
+        <div class="form-row"><div id="captchaContainer"></div></div>
+        <button type="submit" class="btn btn-accent btn-full" data-i18n="form.submit">Отправить в WhatsApp</button>
+        <p class="form-note" data-i18n="form.note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank">политикой конфиденциальности</a>.</p>
+        <p class="form-error" id="formError" role="alert" hidden></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">IG</p>
+    <p data-i18n="footer.line">Ираклий Гасвиани · стоматолог-ортопед · Тбилиси, Dentagram Clinic</p>
+    <p class="footer-links"><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a> · <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
