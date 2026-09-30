@@ -12,9 +12,9 @@ const SITE_CONFIG = {
   BASE_URL: './',
 
   // --- Контакты (заглушки — заменить!) ---
-  WHATSAPP_NUMBER: '995555000000',          // только цифры, без +, пробелов и скобок
-  PHONE_DISPLAY: '+995 555 00 00 00',
-  PHONE_LINK: '+995555000000',
+  WHATSAPP_NUMBER: '79057774999',          // только цифры, без +, пробелов и скобок
+  PHONE_DISPLAY: '+7 905 777-49-99',
+  PHONE_LINK: '+79057774999',
   INSTAGRAM_USER: 'dr.gasviani',            // без @
   MAP_URL: 'https://maps.google.com/?q=Dentagram+Clinic,+18+Adam+Mitskevichi+St,+Tbilisi',
 

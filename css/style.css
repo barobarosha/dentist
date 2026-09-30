@@ -1,16 +1,16 @@
 /* ===== Dr. Irakli Gasviani — one-page site ===== */
 :root{
-  --cream:#f5f3eb;
-  --cream-2:#edeade;
-  --ink:#1c1917;
-  --ink-70:rgba(28,25,23,.7);
-  --ink-45:rgba(28,25,23,.45);
-  --line:rgba(28,25,23,.14);
-  --choc:#4a2c17;
-  --choc-deep:#371009;
-  --dark:#221a15;
-  --dark-text:#e8e3d8;
-  --dark-70:rgba(232,227,216,.7);
+  --cream:#eef1f0;
+  --cream-2:#e0e6e4;
+  --ink:#151a19;
+  --ink-70:rgba(21,26,25,.7);
+  --ink-45:rgba(21,26,25,.45);
+  --line:rgba(21,26,25,.14);
+  --choc:#0c5a40;
+  --choc-deep:#073d2b;
+  --dark:#0e2b21;
+  --dark-text:#e9f0ed;
+  --dark-70:rgba(233,240,237,.7);
   --serif:'Fraunces','Noto Serif Georgian',Georgia,'Times New Roman',serif;
   --sans:'Inter','FiraGO',-apple-system,'Segoe UI',sans-serif;
   --ease:cubic-bezier(.19,1,.22,1);
@@ -32,7 +32,7 @@ h2 em,h1 em{font-style:italic;font-weight:300}
   text-transform:uppercase;letter-spacing:.22em;color:var(--choc);
   margin-bottom:1.1rem;
 }
-.section-dark .eyebrow{color:#c9a37e}
+.section-dark .eyebrow{color:#7fd4b2}
 .section{max-width:1200px;margin:0 auto;padding:clamp(4rem,9vw,7.5rem) clamp(1.25rem,4vw,2.5rem)}
 .section-alt{background:var(--cream-2);max-width:none}
 .section-alt>*{max-width:1200px;margin-left:auto;margin-right:auto}
@@ -41,7 +41,7 @@ h2 em,h1 em{font-style:italic;font-weight:300}
 
 /* ===== Header ===== */
 .site-header{
-  position:sticky;top:0;z-index:50;background:rgba(245,243,235,.88);
+  position:sticky;top:0;z-index:50;background:rgba(238,241,240,.88);
   backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
 }
 .header-inner{
@@ -235,7 +235,7 @@ h2 em,h1 em{font-style:italic;font-weight:300}
   font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--choc);
   transition:color .5s;
 }
-.adv-item.active .adv-num{color:#c9a37e}
+.adv-item.active .adv-num{color:#7fd4b2}
 .adv-title{
   font-family:var(--serif);font-size:1.45rem;line-height:1.15;font-weight:500;
   writing-mode:vertical-rl;transform:rotate(180deg);
@@ -297,10 +297,10 @@ h2 em,h1 em{font-style:italic;font-weight:300}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);padding:clamp(4rem,9vw,7.5rem) clamp(1.25rem,4vw,2.5rem)}
 .section-dark h2{margin-bottom:1.2rem}
 .section-dark .contact-info>p{color:var(--dark-70);max-width:44ch}
-.contact-links{list-style:none;margin-top:2.5rem;border-top:1px solid rgba(232,227,216,.15)}
+.contact-links{list-style:none;margin-top:2.5rem;border-top:1px solid rgba(233,240,237,.15)}
 .contact-links a{
   display:flex;justify-content:space-between;gap:1rem;align-items:baseline;
-  padding:1.1rem 0;border-bottom:1px solid rgba(232,227,216,.15);
+  padding:1.1rem 0;border-bottom:1px solid rgba(233,240,237,.15);
   font-size:.95rem;transition:padding-left .3s var(--ease);
 }
 .contact-links a:hover{padding-left:.6rem;color:#fff}
@@ -309,15 +309,15 @@ h2 em,h1 em{font-style:italic;font-weight:300}
 .form-row{display:flex;flex-direction:column;gap:.45rem}
 .form-row label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-70)}
 .form-row input,.form-row select,.form-row textarea{
-  background:transparent;border:1px solid rgba(232,227,216,.28);border-radius:2px;
+  background:transparent;border:1px solid rgba(233,240,237,.28);border-radius:2px;
   color:var(--dark-text);font-family:var(--sans);font-size:1rem;padding:.9rem 1rem;
   transition:border-color .2s;
 }
 .form-row select option{color:#111}
-.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:#c9a37e}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:#7fd4b2}
 .form-note{font-size:.78rem;color:var(--dark-70)}
 .form-note a{text-decoration:underline}
-.form-error{font-size:.85rem;color:#e0a58e}
+.form-error{font-size:.85rem;color:#8fdcc0}
 
 /* ===== Footer ===== */
 .site-footer{border-top:1px solid var(--line);padding:3rem clamp(1.25rem,4vw,2.5rem);text-align:center}
