@@ -127,8 +127,10 @@ h1 em,h2 em{font-style:normal;color:var(--pink);font-stretch:75%;font-weight:450
 }
 .hero-photo:hover .hero-photo-frame img{transform:scale(1.04)}
 .hero-arch{
-  position:absolute;inset:-1.2rem 1.2rem 1.2rem -1.2rem;z-index:-1;
-  border:1px solid var(--pink);border-radius:999px 999px 6px 6px;
+  position:absolute;inset:0;z-index:-1;
+  transform:translate(1.4rem,1.4rem);
+  background:var(--steel);
+  border-radius:999px 999px 6px 6px;
 }
 .hero-badge{
   position:absolute;left:50%;bottom:-1rem;transform:translateX(-50%) rotate(-2deg);
@@ -445,7 +447,7 @@ h1 em,h2 em{font-style:normal;color:var(--pink);font-stretch:75%;font-weight:450
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;min-height:auto;padding-top:6.5rem}
   .hero-photo{order:-1;aspect-ratio:4/4.2;max-width:400px;margin:0 auto;width:100%}
-  .hero-arch{inset:-.8rem .8rem .8rem -.8rem}
+  .hero-arch{transform:translate(.8rem,.8rem)}
   .about-grid,.contact-grid{grid-template-columns:1fr}
   .service{grid-template-columns:52px 1fr}
   .service p{grid-column:2}
