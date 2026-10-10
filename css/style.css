@@ -131,15 +131,31 @@ h2 em,h1 em{font-style:italic;font-weight:300}
 @media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
 
 /* ===== About ===== */
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem)}
+.about-grid{display:grid;grid-template-columns:1fr;max-width:56rem}
 .about-photo img{border-radius:4px;position:sticky;top:110px}
 .about-body .lead{font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.45rem);line-height:1.4;margin-bottom:1.4rem}
-.about-body>p+p{color:var(--ink-70)}
+.about-body>p+p{color:var(--ink-70);margin-top:.9rem}
 .about-facts{margin:2.2rem 0;border-top:1px solid var(--line)}
 .about-facts>div{display:grid;grid-template-columns:160px 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--line)}
 .about-facts dt{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-45)}
 .about-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
 .about-gallery img{border-radius:4px}
+/* Документы */
+.about-docs{margin-top:1.2rem}
+.docs-label{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-45);margin-bottom:.9rem}
+.docs-strip{display:flex;gap:.8rem;overflow-x:auto;padding-bottom:.6rem;scroll-snap-type:x mandatory}
+.docs-strip img{height:180px;width:auto;flex:0 0 auto;border-radius:6px;border:1px solid var(--line);scroll-snap-align:start;cursor:zoom-in;transition:transform .3s var(--ease),box-shadow .3s}
+.docs-strip img:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(21,26,25,.14)}
+/* Лайтбокс документа */
+.doc-lightbox{position:fixed;inset:0;z-index:200;background:rgba(14,20,18,.88);display:flex;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.doc-lightbox img{max-width:min(92vw,900px);max-height:88vh;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.doc-lightbox-close{position:absolute;top:1.2rem;right:1.4rem;width:44px;height:44px;border:none;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer}
+.doc-lightbox-close:hover{background:rgba(255,255,255,.25)}
+/* Instagram-блок после кейсов */
+.cases-ig{margin-top:3rem;padding:2.4rem clamp(1.4rem,4vw,3rem);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap;background:rgba(255,255,255,.5)}
+.cases-ig p{max-width:34rem;color:var(--ink-70);line-height:1.6;margin:0}
+.btn-ig{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:999px;background:var(--choc);color:#fff;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .25s,transform .25s}
+.btn-ig:hover{background:var(--choc-deep);transform:translateY(-2px)}
 
 /* ===== Services ===== */
 .services-list{border-top:1px solid var(--line)}
@@ -192,8 +208,8 @@ h2 em,h1 em{font-style:italic;font-weight:300}
   touch-action:pan-y;cursor:ew-resize;user-select:none;background:var(--cream-2);
 }
 .ba-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.ba-after-wrap{position:absolute;inset:0;overflow:hidden;width:50%}
-.ba-after-wrap img{width:200%;max-width:none;height:100%;object-fit:cover}
+.ba-before-wrap{position:absolute;inset:0;overflow:hidden;width:50%}
+.ba-before-wrap img{width:200%;max-width:none;height:100%;object-fit:cover}
 .ba-handle{
   position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;
   box-shadow:0 0 0 1px rgba(0,0,0,.15);pointer-events:none;

@@ -86,8 +86,8 @@
       return `
       <article class="case reveal">
         <div class="ba-slider" data-case="${i + 1}">
-          <img class="ba-before" src="${img.before}" alt="${esc(c.title)} — ${d.t['cases.before']}" loading="lazy" width="900" height="650">
-          <div class="ba-after-wrap"><img src="${img.after}" alt="${esc(c.title)} — ${d.t['cases.after']}" loading="lazy" width="900" height="650"></div>
+          <img class="ba-after" src="${img.after}" alt="${esc(c.title)} — ${d.t['cases.after']}" loading="lazy" width="900" height="650">
+          <div class="ba-before-wrap"><img src="${img.before}" alt="${esc(c.title)} — ${d.t['cases.before']}" loading="lazy" width="900" height="650"></div>
           <span class="ba-tag before">${d.t['cases.before']}</span>
           <span class="ba-tag after">${d.t['cases.after']}</span>
           <div class="ba-handle"></div>
@@ -180,9 +180,9 @@
   /* ---------- Слайдеры до/после ---------- */
   function initSliders() {
     document.querySelectorAll('.ba-slider').forEach(sl => {
-      const wrap = sl.querySelector('.ba-after-wrap');
+      const wrap = sl.querySelector('.ba-before-wrap');
       const handle = sl.querySelector('.ba-handle');
-      const img = sl.querySelector('.ba-after-wrap img');
+      const img = sl.querySelector('.ba-before-wrap img');
       const set = pct => {
         pct = Math.max(0, Math.min(100, pct));
         wrap.style.width = pct + '%';
@@ -205,7 +205,7 @@
 
     // Переключение второго фото «после» (миниатюры под слайдером)
     document.querySelectorAll('.ba-thumbs').forEach(group => {
-      const afterImg = group.closest('.case').querySelector('.ba-after-wrap img');
+      const afterImg = group.closest('.case').querySelector('.ba-after');
       group.querySelectorAll('.ba-thumb').forEach(btn => {
         btn.addEventListener('click', () => {
           group.querySelectorAll('.ba-thumb').forEach(b => b.classList.remove('active'));
@@ -319,6 +319,8 @@
     document.getElementById('phoneValue').textContent = cfg.PHONE_DISPLAY;
     const ig = document.getElementById('instagramLink');
     ig.href = 'https://instagram.com/' + cfg.INSTAGRAM_USER;
+    const igc = document.getElementById('igCasesLink');
+    if (igc) igc.href = 'https://instagram.com/' + cfg.INSTAGRAM_USER;
     document.getElementById('instagramValue').textContent = '@' + cfg.INSTAGRAM_USER;
     document.getElementById('mapLink').href = cfg.MAP_URL;
   }
@@ -326,6 +328,19 @@
   // Отслеживание кликов по контактам
   document.querySelectorAll('[data-track]').forEach(a => {
     a.addEventListener('click', () => track(a.dataset.track, { lang }));
+  });
+
+  // Лайтбокс для документов
+  document.querySelectorAll('.docs-strip img').forEach(img => {
+    img.addEventListener('click', () => {
+      const ov = document.createElement('div');
+      ov.className = 'doc-lightbox';
+      ov.innerHTML = `<img src="${img.src}" alt="${img.alt}"><button type="button" class="doc-lightbox-close" aria-label="×">×</button>`;
+      const close = () => ov.remove();
+      ov.addEventListener('click', e => { if (e.target === ov || e.target.classList.contains('doc-lightbox-close')) close(); });
+      document.addEventListener('keydown', function esc(e) { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); } });
+      document.body.appendChild(ov);
+    });
   });
 
   /* ---------- Форма → WhatsApp ---------- */

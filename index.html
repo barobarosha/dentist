@@ -125,9 +125,6 @@
       <h2 data-i18n="about.title">Подход, который виден в результате</h2>
     </div>
     <div class="about-grid">
-      <figure class="about-photo">
-        <img src="assets/img/about.jpg" alt="Иракли Гасвиани в клинике Dentagram" width="588" height="426" loading="lazy">
-      </figure>
       <div class="about-body">
         <p class="lead" data-i18n="about.p1">Меня зовут Иракли Гасвиани, я стоматолог-ортопед. Моя задача — не просто «поставить коронку», а вернуть зубам функцию и естественную эстетику, чтобы результат выглядел как ваши собственные зубы, а не как работа врача.</p>
         <p data-i18n="about.p2">Я работаю по принципу индивидуального плана: перед лечением провожу полную диагностику, объясняю все варианты простым языком и вместе с вами выбираем решение — по показаниям, срокам и бюджету. Никаких навязанных услуг: вы понимаете каждый шаг до того, как он начнётся.</p>
@@ -137,10 +134,15 @@
           <div><dt data-i18n="about.fact2k">Стаж</dt><dd data-i18n="about.fact2v">[N] лет · ортопедическая стоматология, эстетическая реабилитация</dd></div>
           <div><dt data-i18n="about.fact3k">Дополнительно</dt><dd data-i18n="about.fact3v">[сертификаты, курсы]</dd></div>
         </dl>
-        <div class="about-gallery">
-          <img src="assets/img/work-1.jpg" alt="Работа под микроскопом" width="294" height="363" loading="lazy">
-          <img src="assets/img/work-2.jpg" alt="Разбор снимка с пациентом" width="294" height="363" loading="lazy">
-          <img src="assets/img/work-3.jpg" alt="Планирование лечения" width="294" height="363" loading="lazy">
+        <div class="about-docs">
+          <p class="docs-label" data-i18n="about.docs">Дипломы и сертификаты</p>
+          <div class="docs-strip">
+            <img src="assets/img/doc-1.jpg" alt="Диплом специалиста и ординатуры, МГМСУ им. А. И. Евдокимова" loading="lazy">
+            <img src="assets/img/doc-2.jpg" alt="Государственный сертификат Грузии по ортопедической стоматологии" loading="lazy">
+            <img src="assets/img/doc-3.jpg" alt="Свидетельства об аккредитации специалиста" loading="lazy">
+            <img src="assets/img/doc-4.jpg" alt="Сертификат ГСА: стоматология для лиц с особыми потребностями (RU)" loading="lazy">
+            <img src="assets/img/doc-5.jpg" alt="Сертификат GSA: стоматология для лиц с особыми потребностями (KA)" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
@@ -172,6 +174,10 @@
       <p class="section-sub" data-i18n="cases.sub">Потяните ползунок, чтобы сравнить результат</p>
     </div>
     <div class="cases-grid" id="casesGrid"><!-- рендерится из js/i18n.js, фото — js/config.js --></div>
+    <div class="cases-ig reveal">
+      <p data-i18n="cases.ig">Больше моих работ и результатов до и после лечения — в моём Instagram. Подписывайтесь, чтобы познакомиться с моими работами и подходом к лечению.</p>
+      <a class="btn btn-ig" id="igCasesLink" href="https://instagram.com/dr.gasviani" target="_blank" rel="noopener" data-track="instagram_click" data-i18n="cases.igCta">Смотреть в Instagram</a>
+    </div>
   </section>
 
   <!-- ===================== 6. ПРЕИМУЩЕСТВА ===================== -->
