@@ -70,9 +70,17 @@ ru: {
     { title: 'Установка и наблюдение', text: 'Финальная фиксация и контрольные визиты: результат должен служить годами.' },
   ],
   cases: [
-    { title: 'Керамическая коронка', problem: 'Разрушенный зуб 4.6 после лечения кариеса в детстве.', solution: 'Керамическая коронка E.max, оттенок BL2.', result: 'Восстановлена функция жевания, коронка неотличима от своих зубов. Срок: [N] визитов.' },
-    { title: 'Виниры на передние зубы', problem: 'Неровный край и потемнение эмали передних зубов.', solution: 'Керамические виниры с минимальной препарировкой.', result: 'Естественная форма и оттенок, результат согласован на примерке. Срок: [N] визитов.' },
-    { title: 'Протезирование на импланте', problem: 'Отсутствие жевательного зуба, смещение соседних.', solution: 'Коронка на импланте с индивидуальным абатментом.', result: 'Восстановлено жевание, профилактика смещения зубов. Срок: [N] визитов.' },
+    { title: 'Металлокерамическая коронка на культевой вкладке', texts: [
+      'Сильно разрушенный зуб не всегда требует удаления. Возможность его сохранения зависит от состояния корня и окружающих тканей.',
+      'Пациент обратился с разрушенным верхним правым вторым премоляром — зубом 1.5. От зуба сохранился только корень. Для восстановления была выбрана металлическая культевая вкладка с последующей установкой металлокерамической коронки. Вкладка создает опору для коронки.' ] },
+    { title: 'Циркониево-керамическая коронка на центральный резец', texts: [
+      'Передние зубы — важная часть эстетики улыбки. При их восстановлении имеют значение форма, оттенок и естественность.',
+      'Пациент обратился с жалобой на внешний вид верхнего правого центрального резца — зуба 1.1. После санации полости рта для его восстановления была выбрана циркониево-керамическая коронка.',
+      'Цель лечения — гармонично вписать реставрацию в улыбку, учитывая особенности соседних зубов и пожелания пациента.' ] },
+    { title: 'Съёмное протезирование', texts: [
+      'Посмотрите, как изменилось лицо после восстановления зубов съемным протезом: появилась поддержка губ и щек, улыбка стала естественнее.',
+      'Но протезирование — это не только эстетика. Восстановление отсутствующих зубов помогает пережевывать пищу и улучшает речь и комфорт в повседневной жизни.',
+      'Протез изготовлен индивидуально, с учетом состояния полости рта и особенностей пациента.' ] },
   ],
   adv: [
     { title: 'Индивидуальный план лечения', text: 'Никаких шаблонов: план строится под ваши показания, сроки и бюджет.' },
@@ -162,9 +170,17 @@ en: {
     { title: 'Placement and follow-up', text: 'Final fixation and check-up visits: the result should serve you for years.' },
   ],
   cases: [
-    { title: 'Ceramic crown', problem: 'Damaged tooth 4.6 after childhood caries treatment.', solution: 'E.max ceramic crown, shade BL2.', result: 'Chewing function restored, crown indistinguishable from natural teeth. Timeline: [N] visits.' },
-    { title: 'Front-tooth veneers', problem: 'Uneven edge and enamel darkening on front teeth.', solution: 'Ceramic veneers with minimal preparation.', result: 'Natural shape and shade, result approved at the try-in. Timeline: [N] visits.' },
-    { title: 'Implant prosthetics', problem: 'Missing molar, adjacent teeth shifting.', solution: 'Implant crown with a custom abutment.', result: 'Chewing restored, tooth drift prevented. Timeline: [N] visits.' },
+    { title: 'PFM crown on a cast post and core', texts: [
+      'A severely damaged tooth does not always need to be extracted. Whether it can be preserved depends on the condition of the root and surrounding tissues.',
+      'The patient presented with a severely damaged upper right second premolar — tooth 1.5. Only the root remained. The chosen treatment was a cast metal post and core, followed by a porcelain-fused-to-metal crown.' ] },
+    { title: 'Zirconia-ceramic crown for a central incisor', texts: [
+      'Front teeth play an important role in the aesthetics of a smile. When restoring them, shape, shade, and a natural appearance all matter.',
+      'The patient presented with concerns about the appearance of the upper right central incisor — tooth 1.1. After completing the necessary dental treatment, a zirconia-based ceramic crown was selected to restore the tooth.',
+      'The goal of treatment was to create a restoration that blends harmoniously with the smile, taking into account the characteristics of the adjacent teeth and the patient’s preferences.' ] },
+    { title: 'Removable denture', texts: [
+      'Look at how the face changed after the missing teeth were replaced with a removable denture: the lips and cheeks gained support, and the smile became more natural.',
+      'But replacing missing teeth is about more than appearance. It also helps with chewing, speech, and everyday comfort.',
+      'The denture was custom-made, taking into account the patient’s oral condition and individual needs.' ] },
   ],
   adv: [
     { title: 'Individual treatment plan', text: 'No templates: the plan is built around your indications, timeline and budget.' },
@@ -254,9 +270,15 @@ ka: {
     { title: 'დაყენება და დაკვირვება', text: 'საბოლოო ფიქსაცია და კონტროლური ვიზიტები: შედეგი უნდა გემსახუროთ წლების განმავლობაში.' },
   ],
   cases: [
-    { title: 'კერამიკული კორონკა', problem: 'დაზიანებული კბილი 4.6 ბავშვობის კარიესის მკურნალობის შემდეგ.', solution: 'E.max კერამიკული კორონკა, ელფერი BL2.', result: 'საღეჭი ფუნქცია აღდგენილია, კორონკა ბუნებრივი კბილებისგან განურჩეველია. ვადა: [N] ვიზიტი.' },
-    { title: 'წინა კბილების ვინირები', problem: 'წინა კბილების არასწორი კიდე და ემალის დაბნელება.', solution: 'კერამიკული ვინირები მინიმალური პრეპარირებით.', result: 'ბუნებრივი ფორმა და ელფერი, შედეგი შეთანხმდა მოსინჯვაზე. ვადა: [N] ვიზიტი.' },
-    { title: 'იმპლანტზე პროტეზირება', problem: 'საღეჭი კბილის არარსებობა, მეზობელი კბილების გადანაცვლება.', solution: 'კორონკა იმპლანტზე ინდივიდუალური აბატმენტით.', result: 'საღეჭი ფუნქცია აღდგენილია, კბილების გადანაცვლება შეჩერებულია. ვადა: [N] ვიზიტი.' },
+    { title: 'მეტალოკერამიკული გვირგვინი ტაკვის ჩანართზე', texts: [
+      'ძლიერ დაზიანებული კბილი ყოველთვის არ საჭიროებს ამოღებას. მისი შენარჩუნების შესაძლებლობა დამოკიდებულია ფესვისა და მიმდებარე ქსოვილების მდგომარეობაზე.',
+      'პაციენტმა მოგვმართა ზედა მარჯვენა მეორე პრემოლარის — 1.5-ის ძლიერი დაზიანებით. კბილისგან მხოლოდ ფესვი იყო დარჩენილი. აღსადგენად შეირჩა ლითონის ჩამოსხმული წკირიანი ტაკვის ჩანართი, შემდგომ კი — მეტალოკერამიკული გვირგვინი.' ] },
+    { title: 'ცირკონიუმ-კერამიკული გვირგვინი ცენტრალურ საჭრელზე', texts: [
+      'პაციენტმა მოგვმართა ზედა მარჯვენა ცენტრალური საჭრელი კბილის — 1.1-ის გარეგნობასთან დაკავშირებული ესთეტიკური ჩივილით. პირის ღრუს სანაციის შემდეგ კბილის აღსადგენად შეირჩა ცირკონიუმის დიოქსიდის კარკასზე დამზადებული კერამიკული გვირგვინი.' ] },
+    { title: 'მოსახსნელი პროთეზი', texts: [
+      'ნახეთ, როგორ შეიცვალა სახე მოსახსნელი პროთეზით დაკარგული კბილების აღდგენის შემდეგ: ტუჩებსა და ლოყებს საყრდენი დაუბრუნდა, ღიმილი კი უფრო ბუნებრივი გახდა.',
+      'თუმცა პროთეზირება მხოლოდ ესთეტიკას არ ეხება. დაკარგული კბილების აღდგენა ხელს უწყობს საკვების ღეჭვას, მეტყველების გაუმჯობესებასა და ყოველდღიურ კომფორტს.',
+      'პროთეზი დამზადდა ინდივიდუალურად, პაციენტის პირის ღრუს მდგომარეობისა და საჭიროებების გათვალისწინებით.' ] },
   ],
   adv: [
     { title: 'ინდივიდუალური სამკურნალო გეგმა', text: 'არავითარი შაბლონები: გეგმა იქმნება თქვენი მაჩვენებლების, ვადებისა და ბიუჯეტის მიხედვით.' },

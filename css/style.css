@@ -212,6 +212,13 @@ h2 em,h1 em{font-style:italic;font-weight:300}
 .case-text dl{display:grid;gap:.4rem;font-size:.92rem}
 .case-text dt{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-45)}
 .case-text dd{color:var(--ink-70)}
+.case-text p{color:var(--ink-70);font-size:.95rem;line-height:1.65;margin:0 0 .7rem}
+.case-text p:last-child{margin-bottom:0}
+.ba-thumbs{display:flex;gap:.6rem}
+.ba-thumb{padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;background:none;cursor:pointer;width:72px;height:54px;opacity:.65;transition:opacity .25s,border-color .25s}
+.ba-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.ba-thumb:hover{opacity:1}
+.ba-thumb.active{opacity:1;border-color:var(--choc)}
 
 /* ===== Advantages ===== */
 .adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}

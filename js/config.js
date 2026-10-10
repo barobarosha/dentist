@@ -34,6 +34,6 @@ const SITE_CONFIG = {
   CASE_IMAGES: [
     { before: 'assets/img/case-1-before.jpg', after: 'assets/img/case-1-after.jpg' },
     { before: 'assets/img/case-2-before.jpg', after: 'assets/img/case-2-after.jpg' },
-    { before: 'assets/img/case-3-before.jpg', after: 'assets/img/case-3-after.jpg' },
+    { before: 'assets/img/case-3-before.jpg', after: 'assets/img/case-3-after.jpg', after2: 'assets/img/case-3-after2.jpg' },
   ],
 };

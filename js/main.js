@@ -71,6 +71,18 @@
 
     document.getElementById('casesGrid').innerHTML = d.cases.map((c, i) => {
       const img = cfg.CASE_IMAGES[i] || cfg.CASE_IMAGES[0];
+      const body = c.texts
+        ? c.texts.map(p => `<p>${esc(p)}</p>`).join('')
+        : `<dl>
+            <dt>${d.t['cases.problem']}</dt><dd>${esc(c.problem)}</dd>
+            <dt>${d.t['cases.solution']}</dt><dd>${esc(c.solution)}</dd>
+            <dt>${d.t['cases.result']}</dt><dd>${esc(c.result)}</dd>
+          </dl>`;
+      const thumbs = img.after2 ? `
+        <div class="ba-thumbs" role="group" aria-label="${d.t['cases.after']}">
+          <button type="button" class="ba-thumb active" data-src="${img.after}"><img src="${img.after}" alt="" loading="lazy"></button>
+          <button type="button" class="ba-thumb" data-src="${img.after2}"><img src="${img.after2}" alt="" loading="lazy"></button>
+        </div>` : '';
       return `
       <article class="case reveal">
         <div class="ba-slider" data-case="${i + 1}">
@@ -80,13 +92,10 @@
           <span class="ba-tag after">${d.t['cases.after']}</span>
           <div class="ba-handle"></div>
         </div>
+        ${thumbs}
         <div class="case-text">
           <h3>${esc(c.title)}</h3>
-          <dl>
-            <dt>${d.t['cases.problem']}</dt><dd>${esc(c.problem)}</dd>
-            <dt>${d.t['cases.solution']}</dt><dd>${esc(c.solution)}</dd>
-            <dt>${d.t['cases.result']}</dt><dd>${esc(c.result)}</dd>
-          </dl>
+          ${body}
         </div>
       </article>`;
     }).join('');
@@ -192,6 +201,18 @@
       sl.addEventListener('pointerdown', e => { dragging = true; sl.setPointerCapture(e.pointerId); move(e); });
       sl.addEventListener('pointermove', move);
       ['pointerup', 'pointercancel'].forEach(ev => sl.addEventListener(ev, () => dragging = false));
+    });
+
+    // Переключение второго фото «после» (миниатюры под слайдером)
+    document.querySelectorAll('.ba-thumbs').forEach(group => {
+      const afterImg = group.closest('.case').querySelector('.ba-after-wrap img');
+      group.querySelectorAll('.ba-thumb').forEach(btn => {
+        btn.addEventListener('click', () => {
+          group.querySelectorAll('.ba-thumb').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          afterImg.src = btn.dataset.src;
+        });
+      });
     });
   }
 
